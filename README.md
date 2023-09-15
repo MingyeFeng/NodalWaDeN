@@ -1,5 +1,5 @@
 # NodalWaDeN
-A convolutional neural network (CNN) model trained for denoising teleseismic records.
+A convolutional neural network (CNN) model trained for denoising teleseismic short-period records.
 NodalWaDeN is developed based on a parental network [WaveDecompNet](https://github.com/yinjiuxun/WaveDecompNet) developed by [Yin et al. (2023, GJI)](https://doi.org/10.1093/gji/ggac290).
 
 **Usage:**
@@ -13,14 +13,15 @@ NodalWaDeN is developed based on a parental network [WaveDecompNet](https://gith
    
    ```bash
    conda activate WaveDecompNet
-   python Apply_NodalWaDen.py A01 
+   python Apply_NodalWaDeN.py A01 
    ```
-4. You may need to install modules "numpy", "matplotlib", "obspy", and "torch" under WaveDecompNet env if required
+4. You may need to install modules "numpy", "matplotlib", "obspy", "torch", and "h5py" under the WaveDecompNet env if required
    ```bash
    conda install numpy
    conda install matplotlib
    conda install obspy
    conda install torch
+   conda install h5py
    ```
    or
    ```bash
@@ -28,7 +29,10 @@ NodalWaDeN is developed based on a parental network [WaveDecompNet](https://gith
    pip install matplotlib
    pip install obspy
    pip install torch
+   pip install h5py
    ```
-> "Apply_NodalWaDen.py" will generate figures about comparison before and after denoising in the folder "./figs/denoise" for each teleseismic trace, and output SAC files in "./Denoise" and "./NoDenoise" folders.
+**Note:**
 
-> NodalWaDeN has been tested on both macOS and Ubuntu platforms
+- "Apply_NodalWaDen.py" will generate figures about comparison before and after denoising in the folder "./figs", and output SAC files in "./Denoise" and "./NoDenoise" folders.
+
+- NodalWaDeN has been tested on both the macOS and Ubuntu platforms
