@@ -9,13 +9,16 @@ NodalWaDeN is developed based on a parental network [WaveDecompNet](https://gith
    - You may want to change the contents in the file "environment.yml" if you encounter errors when installing the env outside macOS platform
    
 2. Download [NodalWaDeN](https://github.com/MingyeFeng/NodalWaDeN) and move all files to the main folder of [WaveDecompNet](https://github.com/yinjiuxun/WaveDecompNet)
-3. Activate WaveDecompNet and run NodalWaDeN
+   
+   - Decompress A01_EH?.zip to "data/A01" before applying NodalWaDeN
+     
+4. Activate WaveDecompNet and run NodalWaDeN
    
    ```bash
    conda activate WaveDecompNet
    python Apply_NodalWaDeN.py A01 
    ```
-4. You may need to install modules "numpy", "matplotlib", "obspy", "torch", and "h5py" under the WaveDecompNet env if required
+5. You may need to install modules "numpy", "matplotlib", "obspy", "torch", and "h5py" under the WaveDecompNet env if required
    ```bash
    conda install numpy
    conda install matplotlib
